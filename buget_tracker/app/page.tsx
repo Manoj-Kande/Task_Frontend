@@ -1,12 +1,8 @@
 "use client";
-import Image from "next/image";
-import {Button} from "@/components/ui/button"
 import Transactions from "./(transactions)/page";
 import FrontPage from "@/components/FrontPage";
 import Charts from "@/components/ChartsPage";
 import { useState } from "react";
-
-
 
 export default function Home() {
   const [formFlag,setFormFlag]=useState(false);

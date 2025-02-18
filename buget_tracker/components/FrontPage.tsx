@@ -1,9 +1,6 @@
 import React from "react";
 import ExpenseCard from "./ExpenseCard";
-import { fetchTransactions } from "@/constants";
-import { useEffect, useState } from "react";
 const FrontPage = () => {
-  const [transactions, setTransactions] = useState([]);
 
   const expenseCardProps = [
     {
