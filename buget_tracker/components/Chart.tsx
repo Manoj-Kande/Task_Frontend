@@ -19,21 +19,20 @@ const Chart = ({categoryList}:ChartProps) => {
     ],
   };
 
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: "top", 
-        labels: {
-          pointStyle: "circle",  
-        },
-      },
-    },
-    cutout: "50%",
-  };
 
   return (
-    <Doughnut data={data} className="" options={options} />
+    <Doughnut data={data} className="" options={ {
+      responsive: true,
+      plugins: {
+        legend: {
+          position:"right",
+          labels: {
+              usePointStyle: true,
+            },
+        },
+      },
+      cutout: "50%",
+    }} />
   );
 };
 
