@@ -28,7 +28,7 @@ const TransactionsTable = () => {
     getTransactions();
   },[]);
 
-  const handleDelete = async (id: string) => {
+  const handleDelete = async (id: number) => {
   try {
     
     const response = await fetch(`http://localhost:4000/api/transaction/delete/${id}`, {
@@ -63,7 +63,7 @@ const TransactionsTable = () => {
           <TableBody className="">
             {transactions.map((t: Transaction) => {
               // console.log(t._id);
-              const { _id: id, category, date, amount, name, status } = t;
+              const { id, category, date, amount, name, status } = t;
               return (
                 <TableRow
                   key={id}
