@@ -23,11 +23,10 @@ const Chart = ({categoryList}:ChartProps) => {
     responsive: true,
     plugins: {
       legend: {
-        // position:"right",
-        display:false,
-        // labels: {
-        //     usePointStyle: true,
-        //   },
+        position: "top", 
+        labels: {
+          pointStyle: "circle",  
+        },
       },
     },
     cutout: "50%",
