@@ -29,7 +29,7 @@ const ChartsPage = () => {
           className="w-[40%] h-[80%] my-10 flex flex-col justify-evenly border-2 border-black"
         >
           <p className="text-black font-bold px-4 py-3">{data.title}</p>
-          <div className="h-[80%] w-[90%] mx-[10%] mb-4 ">
+          <div className="h-[40%] w-[40%] mx-[10%] mb-4 ">
             <Chart title={data.title} categoryList={data.categoryList} />
           </div>
         </div>
