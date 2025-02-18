@@ -23,7 +23,7 @@ const Chart = ({categoryList}:ChartProps) => {
     responsive: true,
     plugins: {
       legend: {
-        position:"right",
+        position:'right',
         labels: {
             usePointStyle: true,
           },
